@@ -1,0 +1,10 @@
+create base dir and work dir
+
+
+mkdir base dir ; mkdir basedir/workdir
+cd workdir
+touch Class1.java Class2.java Classn.java
+
+for i in *.java; do echo "package workdir;" >> $i; done
+
+for i in *.java; do echo  public class ${i%.*} {}; done

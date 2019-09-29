@@ -1,0 +1,1 @@
+sudo gpg --keyserver keyserver.ubuntu.com --recv-keys --fingerprint número da chave 67E4A52AC865EB40 | gpg --export | sudo apt-key add -
