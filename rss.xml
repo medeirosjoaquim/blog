@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Joaquim Medeiros - Personal blog]]></title><description><![CDATA[Pensamentos, códigos e um pouco sobre mim :)]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Sep 2019 02:09:07 GMT</lastBuildDate><item><title><![CDATA[Good is better than perfect - NEW BLOG]]></title><description><![CDATA[After a while waiting to spare some time and refactor the old blog, here We are. I need to review all the old posts. In 2017 I was starting…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2019/september/good_is_better/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2019/september/good_is_better/</guid><pubDate>Sat, 28 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After a while waiting to spare some time and refactor the old blog, here We are. I need to review all the old posts. In 2017 I was starting to code and there’s plenty of material to review from that time.&lt;/p&gt;
+&lt;p&gt;While I don’t do that, I’ll just leave it here for historical purposes!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Use object instance in route URI - Laravel]]></title><description><![CDATA[So, you want to use an object instance as a variable in your URI, for example: Question: What is Route Model Binding https://scotch.io…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017--12-27-laravel-object-to-route/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017--12-27-laravel-object-to-route/</guid><pubDate>Wed, 27 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;So, you want to use an object instance as a variable in your URI, for example:&lt;/h4&gt;
+&lt;h5&gt;Question: What is Route Model Binding&lt;/h5&gt;
+&lt;h5&gt;&lt;a href=&quot;https://scotch.io/tutorials/cleaner-laravel-controllers-with-route-model-binding&quot;&gt;https://scotch.io/tutorials/cleaner-laravel-controllers-with-route-model-binding&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;you have an object like:&lt;/p&gt;
+&lt;p&gt;´´´
+Books $book (or App\Books $book)&lt;/p&gt;
+&lt;p&gt;´´´&lt;/p&gt;
+&lt;p&gt;and you want to create a route to a URI like example.com/edit/{title}, where
+$title is $book-&gt;title;&lt;/p&gt;
+&lt;p&gt;To do so you need to override the getRouteKeyName method (see the official docs
+&lt;a href=&quot;https://laravel.com/docs/5.5/routing&quot;&gt;https://laravel.com/docs/5.5/routing&lt;/a&gt; - Customizing the Key name). And that’s
+because, by default, laravel will pass the object ID as parameter.&lt;/p&gt;
+&lt;p&gt;So… aaa … read the docs and finish later ---&gt; ()&lt;/p&gt;</content:encoded></item><item><title><![CDATA[youtube-dl for session-cookie // embeded files]]></title><description><![CDATA[ok, first, you need a netscape formated cookie. to do so, use curl -b file.txt (it writes the cookie down); next youtube-dl —cookies file…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-12-10-vimeo-embeded-password-files/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-12-10-vimeo-embeded-password-files/</guid><pubDate>Sun, 10 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ok, first, you need a netscape formated cookie.&lt;/p&gt;
+&lt;p&gt;to do so, use curl -b file.txt (it writes the cookie down);&lt;/p&gt;
+&lt;p&gt;next&lt;/p&gt;
+&lt;p&gt;youtube-dl —cookies file.txt videoURL —refer siteItcameFrom&lt;/p&gt;
+&lt;p&gt;ex;;;&lt;/p&gt;
+&lt;p&gt;videoURL= some vimeo/video&lt;/p&gt;
+&lt;p&gt;—refer = site where you took the link&lt;/p&gt;</content:encoded></item><item><title><![CDATA[quick tip - Rename loop in bash]]></title><description><![CDATA[No exemplo, renomeando todos os nome.jpg para
+nome_resize.jpg ** Usando for loop $ for i in *.jpg; do mv — $i  ”${i/%.jpg/_resize.jpg…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017--xx-xx-NAME/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017--xx-xx-NAME/</guid><pubDate>Sat, 09 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;No exemplo, renomeando todos os nome.jpg para
+nome_resize.jpg&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ls
+
+nome1.jpg
+nome2.jpg
+nome3.jpg&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;** Usando &lt;em&gt;for&lt;/em&gt; loop&lt;/p&gt;
+&lt;p&gt;$ for i in *.jpg; do mv — $i  ”${i/%.jpg/_resize.jpg}”; done&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ls
+
+
+nome1_resize.jpg
+nome2_resize.jpg
+nome3_resize.jpg&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;** O caminho inverso (echo para mostrar antes de fazer a troca):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;for i in *.jpg; do  echo $i&amp;quot;${/%jpg/_resize}&amp;quot;; done&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;:)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Virtualbox - make USB work - nodevice (udev bug)]]></title><description><![CDATA[SOLVED with: https://forums.virtualbox.org/viewtopic.php?t=59462]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-10-23-virtualboxusb/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-10-23-virtualboxusb/</guid><pubDate>Mon, 23 Oct 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;[SOLVED] with:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forums.virtualbox.org/viewtopic.php?t=59462&quot;&gt;https://forums.virtualbox.org/viewtopic.php?t=59462&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fix GUI when using java apps in xmonad]]></title><description><![CDATA[Fix GUI when using java apps on xmonad You need to set the right startupHook , which is import XMonad.Hooks.SetWMName
+… main = do
+    xmonad…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-10-17-java-xmonad/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-10-17-java-xmonad/</guid><pubDate>Tue, 17 Oct 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Fix GUI when using java apps on xmonad&lt;/h3&gt;
+&lt;p&gt;You need to set the right startupHook , which is&lt;/p&gt;
+&lt;p&gt;import XMonad.Hooks.SetWMName
+…&lt;/p&gt;
+&lt;p&gt;main = do
+xmonad $ defaultConfig
+{ modMask = mod4Mask
+, startupHook = setWMName “LG3D”
+— other customizations
+}&lt;/p&gt;
+&lt;p&gt;The complete guide is found at
+&lt;a href=&quot;https://wiki.haskell.org/Xmonad/Frequently_asked_questions#Preferred_Method&quot;&gt;https://wiki.haskell.org/Xmonad/Frequently_asked_questions#Preferred_Method&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Manipulate docker images with bash loop]]></title><description><![CDATA[Manipulate docker images with bash loop Bash is powerful and simple. Everything you can list in the screen can be
+set in a variable and…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-10-09-docker_remove_image_loop/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-10-09-docker_remove_image_loop/</guid><pubDate>Mon, 09 Oct 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Manipulate docker images with bash loop&lt;/h1&gt;
+&lt;p&gt;Bash is powerful and simple. Everything you can list in the screen can be
+set in a variable and manipulated.&lt;/p&gt;
+&lt;p&gt;I’ve just started using Docker and I wanted to do stuff with images like
+copy, move, delete or whatever.&lt;/p&gt;
+&lt;p&gt;To list the images We can do&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo docker images -a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This command will return all the images in the system.
+I had some garbage like&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;none&amp;gt;                  &amp;lt;none&amp;gt;              efe763a68df2        04 days ago         892MB
+&amp;lt;none&amp;gt;                  &amp;lt;none&amp;gt;              g83b695043d3        05 days ago         892MB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;that I’ve wanted to get rid of.&lt;/p&gt;
+&lt;p&gt;So, how We can do it?&lt;/p&gt;
+&lt;p&gt;Well, first let’s loop the results and read it &lt;strong&gt;line&lt;/strong&gt; line by line&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo docker images -a | while read line; do
+
+    commands $line
+ done&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, every line of the results will have it’s value passed through $line variable;&lt;/p&gt;
+&lt;p&gt;I want to delete the images &lt;none&gt;, so:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo docker images -a | while read line; do
+   if [[ $line =~ none  ]]; then
+   sudo docker rmi $line
+  fi
+done&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;$line contains the whole line and We want just the image ID’s, listed in the
+third columns.&lt;/p&gt;
+&lt;p&gt;We can use awk or sed or even grep to catch that.
+I’ll use awk:  &lt;strong&gt;awk ’{ print $3 }’ filename&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo docker images -a | while read line; do
+   if [[ $line =~ none  ]]; then
+    rmv=$(echo $line | awk &amp;#39;{ print $3 }&amp;#39;)
+   # ALWAYS USE ECHO TO TEST ANY CRITICAL COMMAND; like
+   #sudo echo $rmv  ; if it shows exactly what you want to delete;
+   $ then proceed
+   sudo docker rmi $rmv
+  fi
+done&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You could use this kind of loop to build daily reports for example.&lt;/p&gt;
+&lt;p&gt;Hope you’ve enjoyed&lt;/p&gt;</content:encoded></item><item><title><![CDATA[bash oneliner - little rain color]]></title><description><![CDATA[2019 edit: It needs a review but, omg, it’s so cool! LOL  col=0;lin=0; while true; do x=$(shuf -i 1-7 -n 1); if (( $lin > 30 ));   then lin…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-27-onelinebash/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-27-onelinebash/</guid><pubDate>Wed, 27 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;2019 edit: It needs a review but, omg, it’s so cool! LOL&lt;/h2&gt;
+&lt;p&gt; col=0;lin=0; while true; do x=$(shuf -i 1-7 -n 1); if (( $lin &gt; 30 )); &lt;br&gt;
+then lin=0;fi; if (( $col &gt; 100)); then col=0; fi; tput cup $lin $col; &lt;br&gt;
+tput setab $x;  a=$(shuf -i 1-3 -n 1); if (( a == 1 )); then printf ”   ” &lt;br&gt;
+; elif (( a == 2 )); then printf ’ %.0s’ $(seq $y); else printf ”   &lt;br&gt;
+”; fi;((col++));((lin++)); done&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Xmonad (Why and how - [on debian Stretch])]]></title><description><![CDATA[After years (more than 10) with the debian-gnome set, I’ve decided that it was
+time for a change. In fact, I was waiting for a free time to…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-15-xmonad_pt1/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-15-xmonad_pt1/</guid><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After years (more than 10) with the debian-gnome set, I’ve decided that it was
+time for a change. In fact, I was waiting for a free time to change all graphic
+related interfaces in my dev. notebook and, by that, I mean change: window ,
+desktop and login manager(that was GDM3).&lt;/p&gt;
+&lt;p&gt;I’ve looking for Xmonad for some time and decided to give it a try and, well,
+the thing is awesome! Once you’ve done with the setting up, …&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Get MP3 info from command line]]></title><description><![CDATA[Check mp3 info with, well, mp3info ! mp3info -p “%Q %L %v %o %r” test.mp3]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-11-mp3info/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-11-mp3info/</guid><pubDate>Mon, 11 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Check mp3 info with, well, mp3info !&lt;/h1&gt;
+&lt;p&gt;mp3info -p “%Q %L %v %o %r” test.mp3&lt;/p&gt;</content:encoded></item><item><title><![CDATA[cabal]]></title><description><![CDATA[Haskell alsa mixer binding to use with XMONAD cabal install —ghc-options=“-fPIC” alsa-mixer.cabal]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-09-cabal-ghc/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-09-cabal-ghc/</guid><pubDate>Sat, 09 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Haskell alsa mixer binding to use with XMONAD&lt;/h1&gt;
+&lt;p&gt;cabal install —ghc-options=“-fPIC” alsa-mixer.cabal&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Show PID of app running/listen on a port]]></title><description><![CDATA[lsof -i -n -P]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-04-mostrar_pid_portas/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-09-04-mostrar_pid_portas/</guid><pubDate>Mon, 04 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;lsof -i -n -P&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Migrando para neovim]]></title><description><![CDATA[Migrando para neovim - pós instalação Bom, ninguém quer perder aquelas 800 linhas de .vimrc ;
+então, a primeira coisa é editar o $HOME…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-13-neovim-migration/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-13-neovim-migration/</guid><pubDate>Fri, 18 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Migrando para neovim - pós instalação&lt;/h2&gt;
+&lt;p&gt;Bom, ninguém quer perder aquelas 800 linhas de .vimrc ;
+então, a primeira coisa é editar o $HOME/.config/nvim/init.vim
+para que o neovim utilize o antigo .vimrc&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;set runtimepath^=~/.vim runtimepath+=~/.vim/after
+    let &amp;amp;packpath = &amp;amp;runtimepath
+    source ~/.vimrc
+
+
+    if !has(`nvim`)
+        set ttymouse=xterm2
+    endif&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Como decidi migrar de vez, criei&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;alias vi=&amp;quot;nvim&amp;quot;
+alias vim=&amp;quot;nvim&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Encontrar arquivo que possui 'string']]></title><description><![CDATA[Encontrando arquivo que possua determinada string Quando estamos ‘debugando’ um código, é comum precisar encontrar quais arquivos
+fazem…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-18-find-file-string/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-18-find-file-string/</guid><pubDate>Fri, 18 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Encontrando arquivo que possua determinada string&lt;/h3&gt;
+&lt;p&gt;Quando estamos ‘debugando’ um código, é comum precisar encontrar quais arquivos
+fazem referência a determinada função, método etc…&lt;/p&gt;
+&lt;p&gt;Com essa combinação de find + grep podemos listar rapidamente
+quais arquivos contém determinada expressão&lt;/p&gt;
+&lt;p&gt;No exemplo, vamos procurar arquivos que façam referência
+à ‘ready_function’&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;find . -iname &amp;#39;*php&amp;#39; | xargs grep &amp;#39;ready_function&amp;#39; -sl&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Java Path - Debian]]></title><description><![CDATA[Para que as aplicações que usam Java (maven, jruby etc…) encontrem o caminho,
+é preciso configurar a variável JAVACMD, apontando para a sua…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-12-javapath/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-12-javapath/</guid><pubDate>Sat, 12 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Para que as aplicações que usam Java (maven, jruby etc…) encontrem o caminho,
+é preciso configurar a variável JAVACMD, apontando para a sua instalação. No meu
+exemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export JAVACMD=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;E agora é só rodar!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[quick tip - Rename loop in bash]]></title><description><![CDATA[No exemplo, renomeando todos os nome.jpg para
+nome_resize.jpg ** Usando for loop $ for i in *.jpg; do mv — $i  ”${i/%.jpg/_resize.jpg…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-04-rename_loop/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-08-04-rename_loop/</guid><pubDate>Fri, 04 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;No exemplo, renomeando todos os nome.jpg para
+nome_resize.jpg&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ls
+
+nome1.jpg
+nome2.jpg
+nome3.jpg&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;** Usando &lt;em&gt;for&lt;/em&gt; loop&lt;/p&gt;
+&lt;p&gt;$ for i in *.jpg; do mv — $i  ”${i/%.jpg/_resize.jpg}”; done&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ls
+
+
+nome1_resize.jpg
+nome2_resize.jpg
+nome3_resize.jpg&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;** O caminho inverso (echo para mostrar antes de fazer a troca):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;for i in *.jpg; do  echo $i&amp;quot;${/%jpg/_resize}&amp;quot;; done&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;:)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[build tmux from source]]></title><description><![CDATA[Compilando TMUX e dependências- sem root Como compilar TMUX — SEM ROOT.
+Às vezes precisamos trabalhar naquele servidor via SSH com um…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-07-23-tmux-source/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-07-23-tmux-source/</guid><pubDate>Sun, 23 Jul 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Compilando TMUX e dependências- sem root&lt;/h3&gt;
+&lt;p&gt;Como compilar TMUX — SEM ROOT.
+Às vezes precisamos trabalhar naquele servidor via SSH com um usuário sem “poderes” de root (como em uma hospedagem compartilhada por exemplo). Para deixar o
+trabalho mais dinâmico, além dos dotfiles de praxe, TMUX é uma ferramenta
+essêncial e aqui vai minha receita para compilar sem precisar ser root:&lt;/p&gt;
+&lt;h3&gt;FERRAMENTAS NECESSÁRIAS:&lt;/h3&gt;
+&lt;p&gt;Além do código do próprio tmux, precisaremos da biblioteca
+&lt;strong&gt;libevent&lt;/strong&gt; (faça download da versão desejada em &lt;a href=&quot;https://github.com/libevent/libevent/releases/&quot;&gt;https://github.com/libevent/libevent/releases/&lt;/a&gt;  — dê preferência
+a um release stable).
+O TMUX depende, também, da biblioteca &lt;strong&gt;ncurses&lt;/strong&gt; (baixe em ftp://ftp.gnu.org/gnu/ncurses/).
+E, claro, o próprio TMUX (&lt;a href=&quot;https://github.com/tmux/tmux&quot;&gt;https://github.com/tmux/tmux&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Faça uma tarball ou compacte esses arquivos de uma maneira que facilite a
+transmissão por ssh (com scp) ou ftp.&lt;/p&gt;
+&lt;h4&gt;Prepare uma pasta para receber as bibliotecas&lt;/h4&gt;
+&lt;p&gt;Eu costumo criar na minha pasta $HOME uma pasta &lt;strong&gt;local&lt;/strong&gt; para instalar todas as
+aplicações compiladas da fonte sem precisar de root. É uma boa prática que
+usarei aqui.&lt;/p&gt;
+&lt;h3&gt;Começando:&lt;/h3&gt;
+&lt;p&gt;Agora, com os arquivos descompactados já em nosso servidor SSH, cada qual em seu
+diretório, faremos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilação da &lt;strong&gt;libevent&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./configure --prefix=$HOME/local --disable-shared
+make
+make install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilação da &lt;strong&gt;ncurses&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./configure --prefix=$HOME/local
+make
+make install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilação do &lt;strong&gt;tmux&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./configure CFLAGS=&amp;quot;-I$HOME/local/include -I$HOME/local/include/ncurses&amp;quot; LDFLAGS=&amp;quot;-L$HOME/local/lib \
+-L$HOME/local/include/ncurses -L$HOME/local/include&amp;quot; \
+CPPFLAGS=&amp;quot;-I$HOME/local/include -I$HOME/local/include/ncurses&amp;quot; \
+LDFLAGS=&amp;quot;-static -L$HOME/local/include -L$HOME/local/include/ncurses -L$HOME/local/lib&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;** &lt;em&gt;Se tiver problemas para copiar/colar, aqui segue o comando sem cortes:&lt;/em&gt;**&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./configure CFLAGS=&amp;quot;-I$HOME/local/include -I$HOME/local/include/ncurses&amp;quot; LDFLAGS=&amp;quot;-L$HOME/local/lib -L$HOME/local/include/ncurses -L$HOME/local/include&amp;quot; CPPFLAGS=&amp;quot;-I$HOME/local/include -I$HOME/local/include/ncurses&amp;quot; LDFLAGS=&amp;quot;-static -L$HOME/local/include -L$HOME/local/include/ncurses -L$HOME/local/lib&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Agora, basta um comando &lt;em&gt;make&lt;/em&gt;   ; como não somos root não usaremos &lt;em&gt;make install&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Para finalizar:&lt;/h3&gt;
+&lt;h4&gt;Vamos colocar o caminho para o executável do TMUX em nosso PATH, permitindo que ele possa ser chamado de qualquer diretório:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;No seu .bashrc ou .bash_profile :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt; PATH=$PATH:$HOME/bin:$HOME/tmuxsource/tmux-2.5
+ export PATH&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;E é isso!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Install local PERL versions]]></title><description><![CDATA[If you are on Linux probably your system has perl on it. But you don’t wanna mess with the version that the system uses Just follow whats in…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/2017/2017-07-20-install-local-perl/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/2017/2017-07-20-install-local-perl/</guid><pubDate>Thu, 20 Jul 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;If you are on Linux probably your system has perl on it. But you don’t wanna mess with the version that the system uses&lt;/h1&gt;
+&lt;h1&gt;Just follow whats in :&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://search.cpan.org/~haarg/local-lib-2.000023/lib/local/lib.pm&quot;&gt;http://search.cpan.org/~haarg/local-lib-2.000023/lib/local/lib.pm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.hpcc.msu.edu/display/Bioinfo/Installing+Local+Perl+Modules+with+CPAN&quot;&gt;https://wiki.hpcc.msu.edu/display/Bioinfo/Installing+Local+Perl+Modules+with+CPAN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;download link for local::lib &lt;a href=&quot;../img/local-lib-2.000023.tar.gz&quot;&gt; here &lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

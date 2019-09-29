@@ -1,2 +1,0 @@
- find . | while read -r file; do if test -f $file; then sed -i 's|escapeRoom|someHowAgain|' $file; else echo "not a file"; fi; done
-

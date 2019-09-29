@@ -1,6 +1,0 @@
----
-title: cabal
-date: 2017-09-09
----
-# Haskell alsa mixer binding to use with XMONAD
-cabal install --ghc-options="-fPIC" alsa-mixer.cabal
